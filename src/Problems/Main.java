@@ -18,6 +18,7 @@ public class Main {
 		System.out.println("Sum of even fibonnaci numbers: " + Fibonacci.RunFibonacci());
 		System.out.println("Largest palindrome in string: " + Palindrome.RunPalindrome("vsgfsgqwertyyuiiuyytrewqdvsgdfgydydbv"));
 		System.out.println("Largest palindome in 3 digit products: " + PalindromicNumbers.RunPalindromicNumbers());
+		System.out.println("Largest product in grid: " + GridProduct.RunGridProduct());
 	}
 
 }
