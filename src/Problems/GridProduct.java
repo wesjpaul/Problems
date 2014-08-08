@@ -85,28 +85,28 @@ public class GridProduct {
 				// Check the horizontal product from the current location
 				if(j < 17){
 					current = grid[i][j] * grid[i][j+1] * grid[i][j+2] * grid[i][j+3];
-					// If the current multiplication is larger than the largest replace it.
+					// If the current product is larger than the largest replace it.
 					if(current > largest)
 						largest = current;
 				}
 				// Check the vertical product from the current location
 				if(i < 17){
 					current = grid[i][j] * grid[i+1][j] * grid[i+2][j] * grid[i+3][j];
-					// If the current multiplication is larger than the largest replace it.
+					// If the current product is larger than the largest replace it.
 					if(current > largest)
 						largest = current;
 				}
 				// Check the right diagonal product from the current location
 				if(i < 17 && j < 17){
 					current = grid[i][j] * grid[i+1][j+1] * grid[i+2][j+2] * grid[i+3][j+3];
-					// If the current multiplication is larger than the largest replace it.
+					// If the current product is larger than the largest replace it.
 					if(current > largest)
 						largest = current;
 				}
 				// Check the left diagonal product from the current location
 				if(i < 17 && j > 2){
 					current = grid[i][j] * grid[i+1][j-1] * grid[i+2][j-2] * grid[i+3][j-3];
-					// If the current multiplication is larger than the largest replace it.
+					// If the current product is larger than the largest replace it.
 					if(current > largest)
 						largest = current;
 				}
