@@ -20,6 +20,7 @@ public class Main {
 		System.out.println("Largest palindome in 3 digit products: " + PalindromicNumbers.RunPalindromicNumbers());
 		System.out.println("Largest product in grid: " + GridProduct.RunGridProduct());
 		System.out.println("Pythagorean Triplet with a sume of 1000: " + PythagoreanTriplet.RunPythagoreanTriplet());
+		System.out.println("Total NameScore: " + NameScores.RunNameScores());
 	}
 
 }

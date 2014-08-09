@@ -20,7 +20,7 @@ public class PalindromicNumbers {
 	private static final int MAXVALUE = 999;
 	private static final int MINVALUE = 99;
 	
-	private static boolean palindrome(int num){
+	private static boolean isPalindrome(int num){
 		String number = String.valueOf(num);
 		String reverse = new StringBuilder(number).reverse().toString();
 		
@@ -47,7 +47,7 @@ public class PalindromicNumbers {
 				if(i*j <= largest)
 					break;
 				// if a palindrome is found it must be the largest so far.
-				if(palindrome(i*j))
+				if(isPalindrome(i*j))
 					largest = i*j;
 				
 			}

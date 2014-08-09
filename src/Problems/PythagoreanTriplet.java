@@ -28,7 +28,7 @@ public class PythagoreanTriplet {
 		
 		// In order for a < b < c, a must be less than 1/3 the sum.
 		for(a=1; a < SUM/3; a++){
-			// In order for a < b < c, b must less than 1/2 the sum.
+			// In order for a < b < c, b must be less than 1/2 the sum.
 			for(b=1; b < SUM/2; b++){
 				c = SUM - a - b;
 				if(a*a + b*b == c*c)
