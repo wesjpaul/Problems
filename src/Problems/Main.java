@@ -21,6 +21,7 @@ public class Main {
 		System.out.println("Largest product in grid: " + GridProduct.RunGridProduct());
 		System.out.println("Pythagorean Triplet with a sume of 1000: " + PythagoreanTriplet.RunPythagoreanTriplet());
 		System.out.println("Total NameScore: " + NameScores.RunNameScores());
+		System.out.println("Difference of pentegonal numbers D: " + PentegonalNumbers.runPentegonalNumbers());
 	}
 
 }
