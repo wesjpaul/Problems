@@ -26,6 +26,8 @@ import java.util.List;
  *	So, COLIN would obtain a score of 938 × 53 = 49714.
  *	
  *	What is the total of all the name scores in the file?
+ *
+ *  Source: https://projecteuler.net/
  */
 
 public class NameScores {
@@ -40,6 +42,8 @@ public class NameScores {
 			// Open the file and read it into a String.
 			BufferedReader reader = new BufferedReader( new FileReader ("src/Misc/names.txt"));
 			String file = reader.readLine();
+			reader.close();
+			
 			// Separate the names and place into a list.
 			List<String> names = Arrays.asList(file.replace("\"", "").split(","));
 			// Sort the names alphabetically.

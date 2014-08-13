@@ -32,27 +32,27 @@ public class PentegonalNumbers {
 	public static int runPentegonalNumbers(){
 		int j = 1, k;
 		int sum, diff;
-		List<Integer> myList = new ArrayList<Integer>();
+		List<Integer> numbers = new ArrayList<Integer>();
 		
 		// Since it is not known how long it will take, set MAXTIME as a safety.
 		while(j < MAXTIME){
 			
 			// Add a new pentegonal number to the list
-			myList.add(getPentegonalNumber(j));
+			numbers.add(getPentegonalNumber(j));
 			
 			// Loop through the list to check if this new number adds or subtracts with
 			// any of the others to create another pentegonal number
-			for(k = 0; k < myList.size(); k++){
+			for(k = 0; k < numbers.size(); k++){
 				
 				// Using the sum of two numbers check if it is a pentegonal number
-				sum = reversePentegonalNumber(myList.get(j-1)+myList.get(k));
+				sum = reversePentegonalNumber(numbers.get(j-1)+numbers.get(k));
 				if(sum > 0){
 					
 					// Using the difference of two numbers check if it is a pentegonal number
-					diff = reversePentegonalNumber(myList.get(j-1)-myList.get(k));
+					diff = reversePentegonalNumber(numbers.get(j-1)-numbers.get(k));
 					if(diff > 0)
 						// If both the sum and difference of two numbers was pentegonal return the difference
-						return myList.get(j-1)-myList.get(k);
+						return numbers.get(j-1)-numbers.get(k);
 				}
 					
 			}
