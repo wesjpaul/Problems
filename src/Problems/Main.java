@@ -24,6 +24,7 @@ public class Main {
 		System.out.println("Difference of pentegonal numbers D: " + PentegonalNumbers.runPentegonalNumbers());
 		System.out.println("Smallest Prime Number of 8 prime family: " + PrimeDigitReplacement.runPrimeDigitReplacement());
 		System.out.println("Sum of decrypted ASCII text: " + XORdecryption.runXORdecryption());
+		System.out.println("Shortest four way path sum: " + FourWayPathSum.runFourWayPathSum());
 	}
 
 }

@@ -12,7 +12,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /*
@@ -98,7 +97,6 @@ public class XORdecryption {
 			
 			
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 			
@@ -106,8 +104,8 @@ public class XORdecryption {
 		return total;
 	}
 	
-	// lowercase range 97 - 122
-	// common letters Space (32) e (101), t (116), a (97), o (111), i (105), n (110), s, h, r, d, l
+	// Uses the above described algorithm to determine the most probable key given
+	// a group of cipher text from the english language.
 	private static int getProbableKey(List<Integer> row){
 		
 		int [][] countCipher = new int [MAXASCII][2];
